@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 18px; */
+}
+
+.container {
+    /* Later for the padding for both left and right */
+}
+
+header {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding-top: 10px;
+}
+
+.navbar, .hero, .information-section, .testimonial, .cta-box {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+ul.navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.navbar-menu a:hover {
+    color: #F9FAF8;
+}
+
+.hero {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-left h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-left p {
+    margin: 8px 0;
+    color: #E5E7EB;
+}
+
+.hero button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+.hero-right img {
+    border-radius: 3px;
+}
+
+
+/* Sections */
+/* information-section */
+section.information-section {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-section .title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.information-section .cards {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.cards .card {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .card-box {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-box:hover img {
+    transform: scale(1.2);
+}
+
+.card .card-content {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* testimonials-section */
+section.testimonials-section {
+    background-color: #E5E7EB;
+    margin-top: 50px;
+    padding: 80px 0px;
+}
+
+.testimonials-section .testimonial {
+    display: flex;
+    flex-direction: column;
+    width: 830px;
+
+}
+
+.testimonial .testimonial-quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.testimonial .testimonial-author {
+    align-self: flex-end;
+}
+
+/* cta-section */
+section.cta-section {
+    padding: 125px 0;
+}
+
+.cta-section .cta-box {
+    background-color: #3882F6;
+    padding: 30px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: #E5E7EB;
+}
+
+.box-left .title {
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.box-left .content {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.box-right .btn-sign-up {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+}
+
+/* footer */
+footer p {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 30px;
+    text-align: center;
+}
